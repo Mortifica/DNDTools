@@ -17,11 +17,30 @@
 
   <ItemGroup>
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
+    <Compile Remove="ClientApp\app\components\dm_npc_tracker\**" />
     <Content Remove="ClientApp\**" />
+    <EmbeddedResource Remove="ClientApp\app\components\dm_npc_tracker\**" />
+    <None Remove="ClientApp\app\components\dm_npc_tracker\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\app\components\NewFolder\" />
+    <None Remove="ClientApp\app\app.routes.ts" />
+    <None Remove="ClientApp\app\components\home\home.component.module.ts" />
+    <None Remove="ClientApp\app\components\layout\layout.component.routes.ts" />
+    <None Remove="ClientApp\app\components\layout\layout.component.ts" />
+    <None Remove="ClientApp\app\components\token_generator\token_generator.component.module.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\app.routes.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\npc_tracker\npc_tracker.component.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\home\home.component.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\layout\layout.component.routes.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\layout\layout.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\layout\layout.component.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\npc_tracker\npc_tracker.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\token_generator\token_generator.component.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\token_generator\token_generator.component.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
