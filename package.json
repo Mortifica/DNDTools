@@ -51,7 +51,9 @@
     "webpack-merge": "4.1.0",
     "zone.js": "0.8.12"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1"
+  },
   "styles": [
     "../node_modules/font-awesome/css/font-awesome.min.css",
     "../node_modules/primeng/resources/primeng.min.css",

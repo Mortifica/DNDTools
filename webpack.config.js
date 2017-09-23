@@ -38,7 +38,7 @@ module.exports = (env) => {
                 manifest: require('./wwwroot/dist/vendor-manifest.json')
             }),
             new CopyWebpackPlugin([
-                { from: './ClientApp/assets/**/*', to: clientBundleOutputDir + '/assets'}
+                { context: './ClientApp/assets', from: '**/*', to: './assets' }
             ])
         ].concat(isDevBuild ? [
             // Plugins that apply in development builds only
