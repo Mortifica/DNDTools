@@ -11,9 +11,11 @@ import { NpcTrackerModule } from '../npc_tracker/npc_tracker.component.module';
 import { LayoutComponent } from './layout.component';
 import { NavMenuComponent } from './navmenu/navmenu.component';
 
+
 @NgModule({
     imports: [
         BrowserModule,
+       // BrowserAnimationsModule,
         CommonModule,
         FormsModule,
         HttpModule,

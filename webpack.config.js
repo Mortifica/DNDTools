@@ -27,20 +27,23 @@ module.exports = (env) => {
     };
 
     // Configuration for client-side bundle suitable for running in browsers
-    const clientBundleOutputDir = './wwwroot/dist';
+    const clientBundleOutputDir = './wwwroot';
     const clientBundleConfig = merge(sharedConfig, {
         entry: { 'main-client': './ClientApp/boot.browser.ts' },
-        output: { path: path.join(__dirname, clientBundleOutputDir) },
+        output: { path: path.join(__dirname, clientBundleOutputDir + '/dist') },
         plugins: [
             new webpack.DllReferencePlugin({
                 context: __dirname,
                 manifest: require('./wwwroot/dist/vendor-manifest.json')
-            })
+            }),
+            new CopyWebpackPlugin([
+                { from: './ClientApp/assets/*.*', to: clientBundleOutputDir + '/assets', flatten: true }
+            ])
         ].concat(isDevBuild ? [
             // Plugins that apply in development builds only
             new webpack.SourceMapDevToolPlugin({
                 filename: '[file].map', // Remove this line if you prefer inline source maps
-                moduleFilenameTemplate: path.relative(clientBundleOutputDir, '[resourcePath]') // Point sourcemap entries to the original file locations on disk
+                moduleFilenameTemplate: path.relative(clientBundleOutputDir + '/dist', '[resourcePath]') // Point sourcemap entries to the original file locations on disk
             })
         ] : [
             // Plugins that apply in production builds only

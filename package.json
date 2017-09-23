@@ -20,6 +20,7 @@
     "@ngtools/webpack": "1.5.0",
     "@types/webpack-env": "1.13.0",
     "angular2-template-loader": "0.6.2",
+    "angular-font-awesome": "^2.0.3",
     "aspnet-prerendering": "^3.0.1",
     "aspnet-webpack": "^2.0.1",
     "awesome-typescript-loader": "3.2.1",
@@ -31,11 +32,13 @@
     "expose-loader": "0.7.3",
     "extract-text-webpack-plugin": "2.1.2",
     "file-loader": "0.11.2",
+    "font-awesome": "^4.7.0",
     "html-loader": "0.4.5",
     "isomorphic-fetch": "2.2.1",
     "jquery": "3.2.1",
     "json-loader": "0.5.4",
     "preboot": "4.5.2",
+    "primeng": "^4.2.1",
     "raw-loader": "0.5.1",
     "reflect-metadata": "0.1.10",
     "rxjs": "5.4.2",
@@ -48,16 +51,10 @@
     "webpack-merge": "4.1.0",
     "zone.js": "0.8.12"
   },
-  "devDependencies": {
-    "@types/chai": "4.0.1",
-    "@types/jasmine": "2.5.53",
-    "chai": "4.0.2",
-    "jasmine-core": "2.6.4",
-    "karma": "1.7.0",
-    "karma-chai": "0.1.0",
-    "karma-chrome-launcher": "2.2.0",
-    "karma-cli": "1.0.1",
-    "karma-jasmine": "1.1.0",
-    "karma-webpack": "2.0.3"
-  }
+  "devDependencies": {},
+  "styles": [
+    "../node_modules/font-awesome/css/font-awesome.min.css",
+    "../node_modules/primeng/resources/primeng.min.css",
+    "../node_modules/primeng/resources/themes/omega/theme.css"
+  ]
 }
