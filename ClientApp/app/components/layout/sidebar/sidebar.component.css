@@ -20,8 +20,10 @@
     display: block;
     padding: 15px 0 0 25px;
     cursor: pointer;
-    border-top: 1px solid #e3e9ea;
+    border: 1px solid #e3e9ea;
     box-sizing: border-box;
+    background: #442e4e;
+    color: #808080;
 }
 
  /*@media (min-width: 768px) {

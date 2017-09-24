@@ -14,7 +14,6 @@
 .topbar-logo {
     margin-left: 45px;
     margin-top: 15px;
-    display: inline-block;
 }
 .topbar-menu {
     list-style-type: none;
@@ -30,4 +29,7 @@
     text-align: center;
     box-sizing: border-box;
     line-height: 70px;
+}
+.logo {
+    height: 100%
 }

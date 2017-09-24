@@ -12,11 +12,6 @@
 }
 .layout-wrapper {
     height: 100vh;
-    font-family: Roboto,Trebuchet MS,Arial,Helvetica,sans-serif;
-    font-weight: 400;
-    color: #404c51;
-    -webkit-font-smoothing: antialiased;
-    font-size: 1em;
 }
 #layout-content {
     height:100vh;
