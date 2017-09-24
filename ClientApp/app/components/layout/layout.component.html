@@ -1,10 +1,10 @@
-﻿<div class='container-fluid'>
-    <div class='row'>
-        <div class='col-sm-3'>
-            <nav-menu></nav-menu>
-        </div>
-        <div class='col-sm-9 body-content'>
+﻿<div class='layout-wrapper'>
+    <topbar-comp></topbar-comp>
+    <sidebar-comp></sidebar-comp>
+    <div id='layout-content'>
+        <div class="body-section">
             <router-outlet></router-outlet>
         </div>
+        <footer-comp class="footer-section"></footer-comp>
     </div>
 </div>

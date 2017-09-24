@@ -1,0 +1,13 @@
+﻿#layout-footer {
+    font-size: 14px;
+    color: #84939f;
+}
+.footer-menu {
+    float: right;
+    font-size: 24px;
+}
+
+.footer-menu-item {
+    color: #000;
+    margin-left: 16px;
+}

@@ -1,0 +1,41 @@
+﻿body {
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: Roboto,Trebuchet MS,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    color: #404c51;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1em;
+}
+.layout-wrapper {
+    height: 100vh;
+    font-family: Roboto,Trebuchet MS,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    color: #404c51;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1em;
+}
+#layout-content {
+    height:100vh;
+    margin-left: 300px;
+    padding-top: 70px;
+    background-color: #fff;
+}
+.body-section {
+    height: 90%;
+    display: block; 
+    border-bottom: 1px solid #dde3e6;
+    padding: 30px; 
+    overflow: hidden; 
+    background-color: #f5f7f8; 
+ }
+.footer-section {
+    height: 10%;
+    display: block;
+}
+div {
+    display: block;
+}

@@ -34,6 +34,7 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\app.routes.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\layout\topbar\topbar.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\npc_tracker\npc_tracker.component.module.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\home\home.component.module.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\layout\layout.component.routes.ts" />

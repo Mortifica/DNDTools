@@ -9,13 +9,14 @@ import { HomeModule } from '../home/home.component.module';
 import { TokenGeneratorModule } from '../token_generator/token_generator.component.module';
 import { NpcTrackerModule } from '../npc_tracker/npc_tracker.component.module';
 import { LayoutComponent } from './layout.component';
-import { NavMenuComponent } from './navmenu/navmenu.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { TopbarComponent } from './topbar/topbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
     imports: [
         BrowserModule,
-       // BrowserAnimationsModule,
         CommonModule,
         FormsModule,
         HttpModule,
@@ -27,10 +28,11 @@ import { NavMenuComponent } from './navmenu/navmenu.component';
     ],
     declarations: [
         LayoutComponent,
-        NavMenuComponent
+        SidebarComponent,
+        TopbarComponent,
+        FooterComponent
     ],
     providers: [ ],
     exports: [LayoutComponent]
 })
-export class LayoutModule {
-}
+export class LayoutModule { }
