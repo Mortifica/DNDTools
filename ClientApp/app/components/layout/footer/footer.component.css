@@ -1,13 +1,30 @@
-﻿#layout-footer {
-    font-size: 14px;
-    color: #84939f;
-}
-.footer-menu {
-    float: right;
-    font-size: 24px;
+﻿.footer-menu {
+    list-style-type: none;
+    float: left;
+    margin: 0 60px 0 0;
+    padding: 0;
 }
 
-.footer-menu-item {
-    color: #000;
-    margin-left: 16px;
+.footer-menu-item>a {
+    display: inline-block;
+    height: 100%;
+}
+
+.footer-menu > li > a {
+    text-decoration: none;
+    color: #fff;
+    transition: background-color .3s;
+    min-width: 120px;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+}
+
+.footer-menu-item>a:hover {
+    background-color: #4a4f52;
+}
+
+@media screen and (max-width: 64em) {
+
 }

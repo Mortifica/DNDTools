@@ -1,10 +1,16 @@
 ﻿<div class='layout-wrapper'>
-    <topbar-comp></topbar-comp>
-    <sidebar-comp></sidebar-comp>
+    <div id="layout-topbar">
+        <topbar-comp></topbar-comp>
+    </div>
+    <div id="layout-sidebar">
+        <sidebar-comp></sidebar-comp>
+    </div>
     <div id='layout-content'>
         <div class="body-section">
             <router-outlet></router-outlet>
         </div>
-        <footer-comp class="footer-section"></footer-comp>
+        <div id="layout-footer">
+            <footer-comp></footer-comp>
+        </div>
     </div>
 </div>
