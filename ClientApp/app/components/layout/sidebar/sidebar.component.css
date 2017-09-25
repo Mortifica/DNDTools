@@ -8,6 +8,16 @@
     height: calc(100% - 70px);
     width: 300px;
 }
+.sidebar-button {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 58px;
+    text-align: center;
+    transition: background-color .3s;
+}
 .sidebar-menu-list {
    padding: 0;
 }
@@ -41,10 +51,12 @@
     color: #442e4e;
     line-height: 40px;
 }
+
 .sidebar-menu-item.active>a {
     color: #fff;
     line-height: 50px;
 }
+
 .sidebar-menu-item.active:hover {
     font-size: 1.55em;
     width: 295px;
@@ -54,6 +66,7 @@
     font-size: 1.05em;
     width: 280px;
 }
+
 .sidebar-menu-item.active a:link {
     text-decoration: none;
 }
@@ -63,11 +76,18 @@
 }
 
 @media screen and (max-width: 64em) {
-.sidebar-menu {
-    top: 100px;
-    height: calc(100% - 100px);
-    left: -300px;
-    transition: left .3s;
+
+    .sidebar-button {
+        display: inline-block;
+    }
+
+    .sidebar-menu {
+        top: 100px;
+        height: calc(100% - 100px);
+        left: -300px;
+        transition: left .3s;
+    }
 }
 
-}
+
+

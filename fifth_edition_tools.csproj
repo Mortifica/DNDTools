@@ -28,7 +28,6 @@
     <None Remove="ClientApp\app\components\home\home.component.module.ts" />
     <None Remove="ClientApp\app\components\layout\layout.component.routes.ts" />
     <None Remove="ClientApp\app\components\layout\layout.component.ts" />
-    <None Remove="ClientApp\app\components\npc_tracker\npc_tracker_nav\npc_tracker_nav.component.ts" />
     <None Remove="ClientApp\app\components\token_generator\token_generator.component.module.ts" />
   </ItemGroup>
 
@@ -41,7 +40,6 @@
     <TypeScriptCompile Include="ClientApp\app\components\layout\layout.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\layout\layout.component.module.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\npc_tracker\npc_tracker.component.ts" />
-    <TypeScriptCompile Include="ClientApp\app\components\npc_tracker\npc_tracker_nav\npc_tracker_nav.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\token_generator\token_generator.component.module.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\token_generator\token_generator.component.ts" />
   </ItemGroup>

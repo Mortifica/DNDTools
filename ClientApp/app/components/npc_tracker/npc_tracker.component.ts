@@ -6,6 +6,9 @@
 })
 export class NpcTrackerComponent implements OnInit, OnDestroy {
 
+    public npcList: string[] = new Array<string>();
+    public npcName: string = '';
+
     constructor() {
         console.log("NpcTrackerComponent => constructor call");
     }
@@ -16,5 +19,13 @@ export class NpcTrackerComponent implements OnInit, OnDestroy {
 
     ngOnDestroy() {
         console.log("NpcTrackerComponent => OnDestroy call");
+    }
+
+    addNpc() {
+        if (this.npcName.length > 0) {
+            this.npcList.push(this.npcName);
+            this.npcName = '';
+        }
+
     }
 }

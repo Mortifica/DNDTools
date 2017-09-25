@@ -1,24 +1,14 @@
-﻿<h3>Button Addons</h3>
-<div class="ui-g ui-fluid">
-    <div class="ui-g-12 ui-md-4">
-        <div class="ui-inputgroup">
-            <button pButton type="button" label="Search"></button>
-            <input type="text" pInputText placeholder="Keyword">
+﻿<h3>Add Npcs to Master List</h3>
+<div class="">
+    <div class="">
+        <div class="">
+            <button type="button" class="" label="Add" (click)="addNpc()"></button>
+            <input type="text" [(ngModel)]="npcName" placeholder="Npc Name">
         </div>
     </div>
-
-    <div class="ui-g-12 ui-md-4">
-        <div class="ui-inputgroup">
-            <input type="text" pInputText placeholder="Keyword">
-            <button pButton type="button" icon="fa-search" class="ui-button-secondary"></button>
-        </div>
-    </div>
-
-    <div class="ui-g-12 ui-md-4">
-        <div class="ui-inputgroup">
-            <button pButton type="button" icon="fa-check" class="ui-button-success"></button>
-            <input type="text" pInputText placeholder="Vote">
-            <button pButton type="button" icon="fa-close" class="ui-button-danger"></button>
-        </div>
-    </div>
+    <ul>
+        <li *ngFor="let npc of npcList">
+            {{ npc }}
+        </li>
+    </ul>
 </div>

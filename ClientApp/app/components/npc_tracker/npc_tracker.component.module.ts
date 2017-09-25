@@ -1,12 +1,13 @@
 ﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-//import { InputTextModule } from 'primeng/primeng';
+import { FormsModule } from '@angular/forms';
 import { NpcTrackerComponent } from './npc_tracker.component';
+
 
 @NgModule({
     imports: [
         BrowserModule,
-        //InputTextModule
+        FormsModule
     ],
     declarations: [NpcTrackerComponent],
     providers: [],

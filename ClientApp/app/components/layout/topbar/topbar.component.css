@@ -1,19 +1,4 @@
-﻿
-:host .menu-button {
-    display: none;
-    color: #fff;
-    font-size: 24px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 58px;
-    text-align: center;
-    transition: background-color .3s;
-}
-
-:host .logo {
+﻿:host .logo {
     margin-left: 45px;
     margin-top: 15px;
     display: inline-block;
@@ -42,23 +27,11 @@
     text-align: center;
     box-sizing: border-box;
     line-height: 70px;
+    margin: 0 15px;
 }
 
-:host .menu-button:hover, .topbar-menu > li > a:hover {
+:host .menu-button:hover, .topbar-menu>li>a:hover {
     background-color: #4a4f52;
-}
-
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.fa-bars:before {
-    content: "\F0C9";
 }
 
 @media screen and (max-width: 64em) {
