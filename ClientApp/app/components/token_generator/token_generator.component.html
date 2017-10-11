@@ -1,10 +1,16 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+﻿<div>
+    <p-growl [value]="msgs"></p-growl>
 
-</body>
-</html>
+    <h3 class="first">Advanced</h3>
+    <p-fileUpload name="myfile[]" customUpload="true" (uploadHandler)="onUpload($event)" accept="image/*" maxFileSize="1000000" auto="auto">
+        <ng-template pTemplate type="content">
+            <canvas id="canvas" width="100" height="100" style="background-color:black"></canvas>
+            <!--<ul *ngIf="uploadedFiles.length">
+                <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes
+                <br />
+                <img [src]="file.objectURL"/>
+                </li>
+            </ul>-->
+        </ng-template>
+    </p-fileUpload>
+</div>
